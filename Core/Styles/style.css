@@ -1,0 +1,124 @@
+
+:root {
+    --text-color: #a7f2ff;
+    --text-color-hover: #41e2ff;
+  }
+
+
+
+/* Some basic styling for visual appeal */
+body {
+    background-color: rgb(31, 49, 44); /* Set the overall background color */
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif; /* Optional: Set a font for the entire page */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Optional: Add some padding to the body */
+  }
+
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(79,125,111);
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  background-color: var(--text-color);
+}
+
+
+h1, h2 {
+    color: var(--text-color);
+
+}
+
+h2 {
+
+    margin: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.tag {
+    color: darkblue;
+    background-color: var(--text-color);
+    height: 26px;
+    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-radius: 17px;
+}
+
+.tag:hover {
+
+    background-color: var(--text-color-hover);
+}
+
+div {
+  display: flex;
+  gap: 5px;
+}
+
+li {
+  width: fit-content;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.image-row {
+  border-radius: 30px;
+  padding: 10px;
+  content: 256px;
+  width: fit-content;
+
+  display: flex;
+  gap: 0px;
+
+  background: rgb(79,125,111);
+  background: -moz-linear-gradient(90deg, rgba(79,125,111,1) 0%, rgb(50, 79, 71) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(79,125,111,1) 0%, rgb(50, 79, 71) 100%);
+  background: linear-gradient(90deg, rgba(79,125,111,1) 0%, rgb(50, 79, 71) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f7d6f",endColorstr="#314c44",GradientType=1);
+}
+.image-row img {
+  width: 156px;
+  height: 156px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 5px;
+  -webkit-box-shadow: 0px 0px 30px 3px var(--text-color);
+  box-shadow: 0px 0px 30px 3px var(--text-color);
+  transition: 250ms;
+}
+.image-row img:hover {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: -45px;
+    z-index: 1;
+    position:relative;
+}
+.decoy-link {
+  size: 30px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.decoy-link:hover {
+    color: var(--text-color-hover);
+}
+
