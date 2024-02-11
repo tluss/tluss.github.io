@@ -1,0 +1,105 @@
+
+:root {
+    --main-color: #4E474E;
+    --second-color: #9E5F87;
+    --third-color: #D7CED1;
+  }
+
+  * {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Segoe UI Variable Display", Arial, sans-serif;
+    font-size: 12px;
+  }
+
+  body {
+    
+    background-color: var(--main-color);
+    
+  }
+
+
+  #generativeHeader {
+    background-color: #333;
+  }
+
+  .tabList {
+    display: flex;
+    padding: 8px;
+    background-color: #b5c99c;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 2em;
+  }
+
+  .tab {
+    flex: 1;
+    width: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #333;
+    text-align: center;
+    padding: 8px 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .banner {
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+
+  h1{
+    font-size: 64px;
+  }
+
+  .banner_desc{
+    font-size: 48px;
+  }
+
+  .banner_desc, h1{
+    color: #fff;
+    margin-left: 54px;
+  
+  }
+
+  .post {
+    display: flex;
+    margin: 3em;
+    padding: 2em;
+    background-color: var(--second-color);
+    border-radius: 6em;
+  }
+
+  .post > img{ 
+    float: left;
+    border-top-left-radius: 4em;
+    border-bottom-left-radius: 4em;
+  }
+
+  .post > div{ 
+    background-color: var(--main-color);
+    padding: 1em;
+    size: auto;
+    margin-left: 1em;
+    border-top-right-radius: 4em;
+    border-bottom-right-radius: 4em;
+    flex-grow: 1;
+    box-shadow: inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px var(--second-color), 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+
+  .post > div > h3{ 
+    font-size: 32px;
+    color: var(--third-color);
+
+  }
+
+  .post > div > p{ 
+    font-size: 26px;
+    color: var(--third-color);
+
+  }
