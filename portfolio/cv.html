@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Core/Styles/style.css" rel="stylesheet" type="text/css" />
+    <!-- Add type="module" to indicate that this script is a module -->
+    <script src="Core/Interactions/interactions.js" defer></script>
+</head>
+<body>
+
+    <style>
+        .banner {
+            background-image: url(Assets/display_images/blue_pattern.png);
+          }
+    </style>
+
+    <script type="text/javascript">
+        localStorage.setItem('pageTreePos', [0,2]);
+    </script>
+
+
+    <header>
+
+        <div class="banner">
+            <h1>Portfolio</h1>
+            <p class = "banner_desc">Tristan Lusson</p>
+        </div>
+
+        <div id="generativeHeader">
+            <!-- Header créé par JavaScript -->
+        </div>
+        
+        
+    </header>
+
+    <main>
+        <iframe src="Assets/display_images/CV_Tristan_Lusson.pdf" width="100%" height="1200px"> </iframe>
+    </main>
+
+</body>
+</html>
