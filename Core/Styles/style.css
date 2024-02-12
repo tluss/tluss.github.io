@@ -1,7 +1,7 @@
 
 :root {
     --main-color: #4E474E;
-    --second-color: #B9B0B8;
+    --second-color: #9E5F87;
     --third-color: #D7CED1;
   }
 
@@ -94,11 +94,9 @@
 
   .post > div > h3{ 
     font-size: 32px;
-    color: var(--third-color);
-
   }
 
-  .post > div > p{ 
+  .post > div > *{ 
     font-size: 26px;
     color: var(--third-color);
 
