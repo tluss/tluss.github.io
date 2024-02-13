@@ -20,7 +20,6 @@ const tabsTree = [new Tab('#0080FF', 'Profil', 'index.html',[
                   new Tab('#FF9933', 'Projets personnels', 'projects.html',[]),
                   ];
 
-// Function to create and append a new list item with a specified tab
 function appendTab(tabList, tab) {
   const listItem = document.createElement('a');
   listItem.href = tab.href;
@@ -32,7 +31,6 @@ function appendTab(tabList, tab) {
 
 function appendTabList(list, page){
   console.log(page)
-  // Loop through the colors array and create list items
   const tabList = document.createElement('div');
   const generativeHeader = document.getElementById('generativeHeader');
   tabList.style.backgroundColor = list[page].color;
