@@ -9,22 +9,23 @@ class Tab {
 
 // Define an array of colors
 const tabsTree = [new Tab('#0080FF', 'Profil', 'index.html',[
-                    new Tab('#4480FF', 'À propos de moi', 'index.html',[]),
-                    new Tab('#8880FF', 'Compétences', 'skills.html',[]),
-                    new Tab('#CC80FF', 'Curriculum Vitae', 'cv.html#',[]),
+                    new Tab('#4480FF', 'À propos de moi 💖', 'index.html',[]),
+                    new Tab('#8880FF', '🌟 Compétences 🌟', 'skills.html',[]),
+                    new Tab('#CC80FF', 'Curriculum Vitae 🤵', 'cv.html',[]),
                   ]),
                   new Tab('#99FF33', 'Experience professionnelle', 'stages.html',[
                     new Tab('#99FF77', 'Stages', 'stages.html',[]),
-                    new Tab('#99FFBB', 'autre chose je sais pas', '#',[]),
+                    new Tab('#99FFBB', "Vente d'organes en Asie du sud 🪚 (images explicites)", '#',[]),
                   ]),
                   new Tab('#FF9933', 'Projets personnels', 'projects.html',[]),
                   ];
+
 
 function appendTab(tabList, tab) {
   const listItem = document.createElement('a');
   listItem.href = tab.href;
   listItem.textContent = tab.text;
-  listItem.style.backgroundColor = tab.color;
+  listItem.style.borderColor = tab.color;
   listItem.classList.add('tab');
   tabList.appendChild(listItem);
 }
@@ -53,4 +54,5 @@ while (CurrentTabList.length > 0){
   pageId = pageId+1;
   
 }
+
 

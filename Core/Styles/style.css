@@ -1,8 +1,11 @@
 
 :root {
-    --main-color: #4E474E;
+    /*--main-color: #4E474E;
     --second-color: #807378;
-    --third-color: #D7CED1;
+    --third-color: #D7CED1;*/
+    --main-color: #f9f4f5;
+    --second-color: #beb3b7;
+    --third-color: #746e74;
   }
 
   * {
@@ -13,14 +16,17 @@
   }
 
   body {
-    
     background-color: var(--main-color);
-    
+    background-image: url(../../Assets/display_images/pink_bg.png);
   }
 
 
+
   #generativeHeader {
-    background-color: #333;
+    background-color: var(--third-color);
+    padding: 0.25em;
+    padding-bottom: 0.5em;
+    border-bottom: 0.5em;
   }
 
   .tabList {
@@ -30,18 +36,21 @@
     flex-wrap: wrap;
     row-gap: 10px;
     column-gap: 2em;
+    box-shadow: inset -50px 0px 50px -50px #141414, inset 50px 0px 50px -50px #141414;
   }
 
   .tab {
     flex: 1;
     width: auto;
-    background-color: #fff;
     border-radius: 10px;
-    color: #333;
+    color: var(--third-color);
     text-align: center;
+    border: 5px solid;
     padding: 8px 8px;
-    font-size: 20px;
+    font-size: 2em;
     font-weight: bold;
+    background: var(--main-color);
+    box-shadow: inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px var(--second-color), 5px 5px 15px 5px rgba(0,0,0,0);
   }
 
   .banner {
@@ -49,6 +58,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-attachment: fixed;
   }
 
 
@@ -69,28 +79,33 @@
 
   .post {
     display: flex;
-    margin: 3em;
-    padding: 2em;
+    margin: 1em;
+    padding: 1em;
     background-color: var(--second-color);
-    border-radius: 6em;
+    border-radius: 4em;
   }
 
   .post > img{ 
     float: left;
-    border-top-left-radius: 4em;
-    border-bottom-left-radius: 4em;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+    object-fit: contain;
   }
 
   .post > div{ 
-    background-color: var(--main-color);
-    padding: 1em;
+    /*background-color: var(--main-color);*/
+    background-image: url(../../Assets/display_images/main_bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    padding: 3em;
     size: auto;
-    margin-left: 1em;
-    border-top-right-radius: 4em;
-    border-bottom-right-radius: 4em;
+    margin-left: 0em;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
     flex-grow: 1;
     box-shadow: inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px var(--second-color), 5px 5px 15px 5px rgba(0,0,0,0);
   }
+
 
   .post > div > h3{ 
     font-size: 32px;
@@ -100,4 +115,16 @@
     font-size: 26px;
     color: var(--third-color);
 
+  }
+
+  .banner {
+    box-shadow: inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px var(--second-color), 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+
+  .fade-in { animation: fadeIn 2s; }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0.75; }
+    100% { opacity: 1; }
   }
